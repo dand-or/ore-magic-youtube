@@ -24,3 +24,7 @@ Route::get('/hello', function () {
 Route::get('/hello/{name}', function ($name) {
     return 'Hello '.$name.'!';
 });
+
+// Route::get('magic', 'MagicController@index');
+
+Route::resource('magic', 'App\Http\Controllers\MagicController');
