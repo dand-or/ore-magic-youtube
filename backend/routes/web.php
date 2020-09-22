@@ -25,6 +25,7 @@ Route::get('/hello/{name}', function ($name) {
     return 'Hello '.$name.'!';
 });
 
-// Route::get('magic', 'MagicController@index');
+Route::get('magic', 'App\Http\Controllers\MagicController@index');
+Route::get('magic/download', 'App\Http\Controllers\MagicController@download');
 
-Route::resource('magic', 'App\Http\Controllers\MagicController');
+// Route::resource('magic', 'App\Http\Controllers\MagicController');
